@@ -1,0 +1,14 @@
+.links {
+  justify-content: flex-end;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.links > a {
+  margin: 5px;
+}
+
+a, img {
+  height: 90%;
+  width: auto;
+}

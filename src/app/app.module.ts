@@ -9,6 +9,11 @@ import { SecretSantaComponent } from './components/secret-santa/secret-santa.com
 import { ProjectsComponent } from './components/projects/projects.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule} from '@angular/material';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HeaderComponent } from './components/header/header.component';
+import {NgxSpinnerModule} from 'ngx-spinner';
 
 
 @NgModule({
@@ -16,7 +21,10 @@ import { MatButtonModule} from '@angular/material';
     AppComponent,
     LandingPageComponent,
     SecretSantaComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutComponent,
+    ContactComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +32,9 @@ import { MatButtonModule} from '@angular/material';
     BrowserAnimationsModule,
     MatTabsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

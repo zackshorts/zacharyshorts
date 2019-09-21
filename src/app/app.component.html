@@ -1,9 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<mat-tab-group mat-align-tabs="center">
-  <mat-tab label="Home"><app-landing-page></app-landing-page></mat-tab>
-  <mat-tab label="About"><p>about me</p></mat-tab>
-  <mat-tab label="Projects"><app-projects></app-projects></mat-tab>
-  <mat-tab label="Contact"><p>contact me</p></mat-tab>
-</mat-tab-group>
-
+<app-header></app-header>
 <router-outlet></router-outlet>
+<ngx-spinner
+  bdOpacity = 1
+  bdColor = "rgba(51,51,51,0.89)"
+  size = "large"
+  color = "#3f51b5"
+  type = "ball-atom"
+  [fullScreen] = "true"
+>
+  <p style="color: white" >Loading . . .</p>
+</ngx-spinner>
