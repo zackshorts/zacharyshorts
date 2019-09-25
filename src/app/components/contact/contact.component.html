@@ -1,1 +1,38 @@
-<p>contact works!</p>
+<h1 mat-dialog-title>Leave your feedback</h1>
+<div>
+<form [formGroup]="emailForm" class="contact-form">
+  <mat-form-field class="example-full-width">
+    <input formControlName="subject" matInput placeholder="Subject" [(ngModel)]="inputSubject">
+    <mat-error *ngIf="emailForm.get('subject').hasError('required')">
+      Subject is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input formControlName="name" matInput placeholder="Full name" [(ngModel)]="inputName">
+      <mat-error *ngIf="emailForm.get('name').hasError('required')">
+        Name is <strong>required</strong>
+      </mat-error>
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input formControlName="email" matInput placeholder="Email Address" [(ngModel)]="inputEmail">
+      <mat-error *ngIf="emailForm.get('email').hasError('email') && !emailForm.get('email').hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailForm.get('email').hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+    <mat-form-field class="example-full-width">
+      <textarea formControlName="message" matInput placeholder="What do you want to say?" name="message" [(ngModel)]="inputMessage"></textarea>
+    </mat-form-field>
+  </p>
+  <div mat-dialog-actions class="action-buttons">
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button cdkFocusInitial (click)="sendEmail()">Send</button>
+  </div>
+</form>
+</div>

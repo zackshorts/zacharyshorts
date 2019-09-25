@@ -1,0 +1,27 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+// GREY GREEN THEME
+// #37474F
+$custom-theme-primary: mat-palette($mat-blue-grey, 800);
+// #69F0AE
+$custom-theme-accent:mat-palette($mat-green, A200);
+$custom-theme-warn: mat-palette($mat-red);
+$custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
+@include angular-material-theme($custom-theme);
+$greenprimary: mat-color($custom-theme-primary);
+$greenaccent: mat-color($custom-theme-accent);
+
+// INDIGO ORANGE THEME
+// #3F51B5
+$custom-theme-primary1: mat-palette($mat-indigo);
+// #FFD740
+$custom-theme-accent1:mat-palette($mat-amber, A200);
+$custom-theme-warn1: mat-palette($mat-red);
+$custom-theme1: mat-light-theme($custom-theme-primary1, $custom-theme-accent1, $custom-theme-warn1);
+//@include angular-material-theme($custom-theme1);
+$indigoprimary: mat-color($custom-theme-primary1);
+$indigoaccent: mat-color($custom-theme-accent1);
+
+
