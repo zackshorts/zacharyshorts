@@ -8,7 +8,15 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { SecretSantaComponent } from './components/secret-santa/secret-santa.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import {MatCardModule} from '@angular/material/card';
-import {MatButtonModule, MatDialogModule, MatIconModule, MatInputModule, MatStepperModule, MatTooltipModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatDialogModule,
+  MatIconModule,
+  MatInputModule,
+  MatStepperModule,
+  MatTooltipModule,
+  MatSnackBarModule
+} from '@angular/material';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -44,7 +52,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatStepperModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -27,12 +27,12 @@
 
   <p>
     <mat-form-field class="example-full-width">
-      <textarea formControlName="message" matInput placeholder="What do you want to say?" name="message" [(ngModel)]="inputMessage"></textarea>
+      <textarea formControlName="message" matInput placeholder="What do you want to say?" name="message" [(ngModel)]="inputMessage" required></textarea>
     </mat-form-field>
   </p>
   <div mat-dialog-actions class="action-buttons">
     <button mat-button (click)="onNoClick()">Cancel</button>
-    <button mat-button cdkFocusInitial (click)="sendEmail()">Send</button>
+    <button mat-button cdkFocusInitial (click)="sendEmail()" [disabled]="!emailForm.valid"><mat-icon>send</mat-icon> Send</button>
   </div>
 </form>
 </div>

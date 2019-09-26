@@ -15,6 +15,6 @@ export class HeaderComponent implements OnInit {
     this.spinner.show();
     setTimeout(() => {
       this.spinner.hide();
-    }, 100);
+    }, 1500);
   }
 }

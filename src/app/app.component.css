@@ -21,3 +21,16 @@ app-header {
 textarea {
   width: 100%;
 }
+
+.mat-simple-snackbar {
+  justify-content: center;
+  text-align: center;
+}
+
+snack-bar-container {
+  min-width: 0;
+}
+
+.center {
+  justify-content: center;
+}

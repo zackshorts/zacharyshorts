@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {MatDialogRef} from '@angular/material';
+import {Component, Inject, OnInit} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialogRef, MatSnackBar} from '@angular/material';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
@@ -21,10 +21,10 @@ export class ContactComponent implements OnInit {
     message: new FormControl(this.inputMessage),
   });
 
-  constructor(public dialogRef: MatDialogRef<ContactComponent>, private http: HttpClient) {}
+  constructor(public dialogRef: MatDialogRef<ContactComponent>, @Inject(MAT_DIALOG_DATA) data, private http: HttpClient) {}
 
   onNoClick(): void {
-    this.dialogRef.close();
+    this.dialogRef.close(false);
   }
 
   ngOnInit() {
@@ -35,14 +35,16 @@ export class ContactComponent implements OnInit {
       'Content-Type': 'application/json',
       'Accept': '*/*',
     });
-    let options = { headers: headers };
+    let options = {headers: headers};
     let body = {
       'subject': this.inputSubject,
       'name': this.inputName,
       'from': this.inputEmail,
       'message': this.inputMessage
     };
-    this.dialogRef.close();
+    this.dialogRef.close(true);
     return this.http.post('https://zacharyshorts-emailserver.herokuapp.com/sendemail', body, options).subscribe();
   }
+
+
 }
