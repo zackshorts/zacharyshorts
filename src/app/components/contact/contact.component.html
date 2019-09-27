@@ -2,28 +2,26 @@
 <div>
 <form [formGroup]="emailForm" class="contact-form">
   <mat-form-field class="example-full-width">
-    <input formControlName="subject" matInput placeholder="Subject" [(ngModel)]="inputSubject">
+    <input formControlName="subject" matInput placeholder="Subject" [(ngModel)]="inputSubject" required>
     <mat-error *ngIf="emailForm.get('subject').hasError('required')">
       Subject is <strong>required</strong>
     </mat-error>
   </mat-form-field>
-  <table class="example-full-width" cellspacing="0"><tr>
-    <td><mat-form-field class="example-full-width">
-      <input formControlName="name" matInput placeholder="Full name" [(ngModel)]="inputName">
-      <mat-error *ngIf="emailForm.get('name').hasError('required')">
-        Name is <strong>required</strong>
-      </mat-error>
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <input formControlName="email" matInput placeholder="Email Address" [(ngModel)]="inputEmail">
-      <mat-error *ngIf="emailForm.get('email').hasError('email') && !emailForm.get('email').hasError('required')">
-        Please enter a valid email address
-      </mat-error>
-      <mat-error *ngIf="emailForm.get('email').hasError('required')">
-        Email is <strong>required</strong>
-      </mat-error>
-    </mat-form-field></td>
-  </tr></table>
+  <mat-form-field class="example-full-width">
+    <input formControlName="name" matInput placeholder="Full name" [(ngModel)]="inputName" required>
+    <mat-error *ngIf="emailForm.get('name').hasError('required')">
+      Name is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input formControlName="email" matInput placeholder="Email Address" [(ngModel)]="inputEmail" required>
+    <mat-error *ngIf="emailForm.get('email').hasError('email') && !emailForm.get('email').hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="emailForm.get('email').hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
 
   <p>
     <mat-form-field class="example-full-width">

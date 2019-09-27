@@ -17,7 +17,7 @@ export class AppComponent {
 
   openDialog(): void {
     const dialogConfig = {
-      width: '60%',
+      width: '95vw',
       autoFocus: true,
       disableClose: true,
     };

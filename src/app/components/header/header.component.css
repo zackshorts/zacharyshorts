@@ -1,4 +1,4 @@
-.links {
+.links, .hamburger {
   justify-content: flex-end;
   margin-right: 0;
   margin-left: auto;
@@ -7,8 +7,21 @@
 .links > a {
   margin: 5px;
 }
+.hamburger {
+  display:none;
+}
 
 a, img {
   height: 90%;
   width: auto;
 }
+
+@media (max-width: 600px) {
+  .links {
+    display:none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+

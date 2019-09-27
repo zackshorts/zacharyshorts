@@ -17,4 +17,8 @@ export class HeaderComponent implements OnInit {
       this.spinner.hide();
     }, 1500);
   }
+
+  sayHello() {
+    console.log('hello');
+  }
 }
