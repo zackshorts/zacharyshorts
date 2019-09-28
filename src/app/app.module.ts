@@ -15,7 +15,7 @@ import {
   MatInputModule,
   MatStepperModule,
   MatTooltipModule,
-  MatSnackBarModule
+  MatSnackBarModule, MatMenuModule
 } from '@angular/material';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AboutComponent } from './components/about/about.component';
@@ -53,7 +53,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

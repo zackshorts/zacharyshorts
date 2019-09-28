@@ -7,7 +7,12 @@
       <a mat-raised-button routerLink="/projects" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">code</mat-icon> Projects</a>
     </div>
     <div class="hamburger">
-      <button (click)="sayHello()"><mat-icon aria-hidden="false" aria-label="info icon">code</mat-icon></button>
+      <button mat-raised-button [matMenuTriggerFor]="menu"><mat-icon aria-hidden="false" aria-label="info icon">menu</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <a mat-menu-item routerLink="/" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">home</mat-icon> Home</a>
+        <a mat-menu-item routerLink="/about" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">info</mat-icon> About</a>
+        <a mat-menu-item routerLink="/projects" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">code</mat-icon> Projects</a>
+      </mat-menu>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>

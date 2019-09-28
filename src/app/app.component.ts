@@ -26,7 +26,7 @@ export class AppComponent {
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.snackBar.open('Email has been sent!', "Dismiss",{
-          duration: 10000000,
+          duration: 3000,
           panelClass: 'center'
         });
       }
