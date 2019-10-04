@@ -15,7 +15,7 @@ import {
   MatInputModule,
   MatStepperModule,
   MatTooltipModule,
-  MatSnackBarModule, MatMenuModule
+  MatSnackBarModule, MatMenuModule, MatDividerModule
 } from '@angular/material';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AboutComponent } from './components/about/about.component';
@@ -25,6 +25,8 @@ import {NgxSpinnerModule} from 'ngx-spinner';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {OverlayContainer, OverlayModule} from '@angular/cdk/overlay';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     MatSnackBarModule,
-    MatMenuModule
+    MatMenuModule,
+    OverlayModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

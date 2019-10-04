@@ -2,26 +2,124 @@
 
 @include mat-core();
 
+//==================
 // GREY GREEN THEME
 // #37474F
-$custom-theme-primary: mat-palette($mat-blue-grey, 800);
 // #69F0AE
-$custom-theme-accent:mat-palette($mat-green, A200);
-$custom-theme-warn: mat-palette($mat-red);
-$custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
-@include angular-material-theme($custom-theme);
-$greenprimary: mat-color($custom-theme-primary);
-$greenaccent: mat-color($custom-theme-accent);
+//==================
+$green-theme-primary: mat-palette($mat-blue-grey, 800);
+$green-theme-accent:mat-palette($mat-green, A200);
+$green-theme-warn: mat-palette($mat-red);
+$green-theme: mat-light-theme($green-theme-primary, $green-theme-accent, $green-theme-warn);
+@include angular-material-theme($green-theme);
+.green-theme {
+  @include angular-material-theme($green-theme);
+  $backgroundColor: rgba(63,81,181,1);
+}
 
+//====================
 // INDIGO ORANGE THEME
 // #3F51B5
-$custom-theme-primary1: mat-palette($mat-indigo);
 // #FFD740
-$custom-theme-accent1:mat-palette($mat-amber, A200);
-$custom-theme-warn1: mat-palette($mat-red);
-$custom-theme1: mat-light-theme($custom-theme-primary1, $custom-theme-accent1, $custom-theme-warn1);
-//@include angular-material-theme($custom-theme1);
-$indigoprimary: mat-color($custom-theme-primary1);
-$indigoaccent: mat-color($custom-theme-accent1);
+ //====================
+$indigo-theme-primary: mat-palette($mat-indigo);
+$indigo-theme-accent:mat-palette($mat-amber, A200);
+$indigo-theme-warn: mat-palette($mat-red);
+$indigo-theme: mat-light-theme($indigo-theme-primary, $indigo-theme-accent, $indigo-theme-warn);
+.indigo-theme {
+  @include angular-material-theme($indigo-theme);
+  $backgroundColor: rgba(63,81,181,1);
+
+}
+
+//==================
+// BLACK GREY THEME
+//==================
+$grey-theme-primary: mat-palette($mat-grey, 900);
+$grey-theme-accent:mat-palette($mat-grey, 400);
+$grey-theme-warn: mat-palette($mat-red);
+$grey-theme: mat-light-theme($grey-theme-primary, $grey-theme-accent, $grey-theme-warn);
+.grey-theme {
+  @include angular-material-theme($grey-theme);
+  $backgroundColor: rgba(63,81,181,1);
+
+}
+
+//==================
+// RED BLUE THEME
+//==================
+$red-theme-primary: mat-palette($mat-red, 400);
+$red-theme-accent:mat-palette($mat-blue, 200);
+$red-theme-warn: mat-palette($mat-red);
+$red-theme: mat-light-theme($red-theme-primary, $red-theme-accent, $red-theme-warn);
+.red-theme {
+  @include angular-material-theme($red-theme);
+  $backgroundColor: rgba(63,81,181,1);
+
+}
+
+//==================
+// PURPLE THEME
+//==================
+$purple-theme-primary: mat-palette($mat-deep-purple, 900);
+$purple-theme-accent:mat-palette($mat-deep-purple, 300);
+$purple-theme-warn: mat-palette($mat-purple);
+$purple-theme: mat-light-theme($purple-theme-primary, $purple-theme-accent, $purple-theme-warn);
+.purple-theme {
+  @include angular-material-theme($purple-theme);
+  $backgroundColor: rgba(63,81,181,1);
+
+}
+
+//==================
+// ORANGE THEME
+//==================
+$orange-theme-primary: mat-palette($mat-deep-orange, A400);
+$orange-theme-accent:mat-palette($mat-green, 800);
+$orange-theme-warn: mat-palette($mat-red);
+$orange-theme: mat-light-theme($orange-theme-primary, $orange-theme-accent, $orange-theme-warn);
+.orange-theme {
+  @include angular-material-theme($orange-theme);
+  $backgroundColor: rgba(63,81,181,1);
+
+}
+
+//==================
+// BROWN THEME
+//==================
+$brown-theme-primary: mat-palette($mat-brown, 800);
+$brown-theme-accent:mat-palette($mat-lime, 400);
+$brown-theme-warn: mat-palette($mat-red);
+$brown-theme: mat-light-theme($brown-theme-primary, $brown-theme-accent, $brown-theme-warn);
+.brown-theme {
+  @include angular-material-theme($brown-theme);
+  $backgroundColor: rgba(63,81,181,1);
+
+}
+
+//==================
+// YELLOW THEME
+//==================
+$yellow-theme-primary: mat-palette($mat-yellow, 400);
+$yellow-theme-accent:mat-palette($mat-teal, 800);
+$yellow-theme-warn: mat-palette($mat-red);
+$yellow-theme: mat-light-theme($yellow-theme-primary, $yellow-theme-accent, $yellow-theme-warn);
+.yellow-theme {
+  @include angular-material-theme($yellow-theme);
+  $backgroundColor: rgba(63,81,181,1);
+
+}
+
+//==================
+// PINK THEME
+//==================
+$pink-theme-primary: mat-palette($mat-pink, 400);
+$pink-theme-accent:mat-palette($mat-cyan, 700);
+$pink-theme-warn: mat-palette($mat-red);
+$pink-theme: mat-light-theme($pink-theme-primary, $pink-theme-accent, $pink-theme-warn);
+.pink-theme {
+  @include angular-material-theme($pink-theme);
+  $backgroundColor: rgba(63,81,181,1);
+}
 
 

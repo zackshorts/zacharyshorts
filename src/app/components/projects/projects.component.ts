@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  projects: any = [];
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    this.projects = this.fetchGithubProjects();
+  }
+
+  private fetchGithubProjects() {
+    return this.http.get("https://api.github.com/users/zackshorts/repos").subscribe(res => {
+      console.log(res);
+      this.projects = res;
+      console.log(this.projects);
+    });
   }
 
 }

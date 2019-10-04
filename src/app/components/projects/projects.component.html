@@ -1,36 +1,18 @@
 <div class="component-body">
-  <h1>This is the projects page.</h1>
-  <div class="project-grid">
-    <mat-card class="example-card">
+  <div class="project-grid" >
+    <mat-card class="project-card" *ngFor="let project of projects">
       <mat-card-header>
-        <mat-card-title>JS Pong</mat-card-title>
-        <mat-card-subtitle>HTML Canvas Game</mat-card-subtitle>
+        <mat-card-title>{{project.name}}</mat-card-title>
+        <mat-card-subtitle>{{project.language || ""}}</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="../../assets/transparent-logo.png" >
       <mat-card-content>
         <p>
-          Secret Santa website blah blah blah
+          {{project.description}}
         </p>
       </mat-card-content>
-      <mat-card-actions class="alternate-theme">
-        <button mat-raised-button color="primary"><a target="_blank" href="https://github.com/zackshorts/pong-js">View on Github</a></button>
-        <button mat-raised-button color="accent"><a target="_blank" href="https://zacharyshorts.com/">Live Demo</a></button>    </mat-card-actions>
+      <mat-card-actions class="actions">
+        <button mat-raised-button color="primary"><a target="_blank" [href]="project.html_url">View on Github</a></button>
+        <button *ngIf="project.homepage != null && project.homepage != ''" mat-raised-button color="accent"><a target="_blank" [href]="project.homepage">Live Demo</a></button>    </mat-card-actions>
     </mat-card>
-    <mat-card class="example-card">
-    <mat-card-header>
-      <mat-card-title>Secret Santa</mat-card-title>
-      <mat-card-subtitle>Web Application</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="../../assets/graffiti-logo.png" >
-    <mat-card-content>
-      <p>
-        Secret Santa website blah blah blah
-      </p>
-    </mat-card-content>
-    <mat-card-actions class="alternate-theme">
-      <button mat-raised-button color="primary"><a target="_blank" href="https://github.com/zackshorts/secret-santa">View on Github</a></button>
-      <button mat-raised-button color="accent"><a target="_blank" href="https://zacharyshorts.com/secret-santa">Live Demo</a></button>
-    </mat-card-actions>
-  </mat-card>
   </div>
 </div>

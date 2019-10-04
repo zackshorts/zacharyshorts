@@ -1,4 +1,21 @@
-/*.component-body {*/
-/*  background: rgb(255,255,255);*/
-/*  background: linear-gradient(160deg, rgba(255,255,255,1) 60%, rgba(63,81,181,1) 60%);*/
-/*}*/
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 50vw;
+  margin: 35px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important;
+}
+
+h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 4rem;
+  padding-top: 30px;
+}
+
+@media (max-width: 650px) {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  }
+}

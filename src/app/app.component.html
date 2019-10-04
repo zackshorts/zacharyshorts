@@ -1,6 +1,18 @@
 <app-header></app-header>
 <router-outlet></router-outlet>
-<button (click)="openDialog()" matTooltip="Send me suggestions" matTooltipPosition="left" mat-fab color="accent" class="contact-fab"><mat-icon aria-hidden="false" aria-label="Example home icon">contact_support</mat-icon></button>
+<button [matMenuTriggerFor]="color_menu" matTooltip="Choose a theme" matTooltipPosition="left" mat-fab color="primary" class="color-fab"><mat-icon aria-hidden="false" color="accent" aria-label="Color icon">palette</mat-icon></button>
+<mat-menu #color_menu="matMenu" backdropClass="color-menu">
+  <div mat-menu-item class="green-color" (click)="onSetTheme('green-theme')"></div>
+  <div mat-menu-item class="indigo-color" (click)="onSetTheme('indigo-theme')"></div>
+  <div mat-menu-item class="grey-color" (click)="onSetTheme('grey-theme')"></div>
+  <div mat-menu-item class="red-color" (click)="onSetTheme('red-theme')"></div>
+  <div mat-menu-item class="purple-color" (click)="onSetTheme('purple-theme')"></div>
+  <div mat-menu-item class="orange-color" (click)="onSetTheme('orange-theme')"></div>
+  <div mat-menu-item class="brown-color" (click)="onSetTheme('brown-theme')"></div>
+  <div mat-menu-item class="yellow-color" (click)="onSetTheme('yellow-theme')"></div>
+  <div mat-menu-item class="pink-color" (click)="onSetTheme('pink-theme')"></div>
+</mat-menu>
+<button (click)="openDialog()" matTooltip="Send me suggestions" matTooltipPosition="left" mat-fab color="accent" class="contact-fab"><mat-icon aria-hidden="false" color="primary" aria-label="Contact icon">contact_support</mat-icon></button>
 <ngx-spinner
   bdOpacity = 1
   bdColor = "rgba(51,51,51,0.89)"
