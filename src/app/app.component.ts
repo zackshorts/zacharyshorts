@@ -4,11 +4,13 @@ import {MatDialog, MatToolbarModule, MatDialogRef, MAT_DIALOG_DATA, MatSnackBar}
 import {MatIcon, MatIconRegistry} from '@angular/material';
 import {ContactComponent} from './components/contact/contact.component';
 import {OverlayContainer} from '@angular/cdk/overlay';
+import {slideInAnimation} from './route-animation';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [ slideInAnimation ]
 })
 export class AppComponent implements OnInit {
   title = 'zacharyshorts';

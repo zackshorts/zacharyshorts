@@ -1,5 +1,5 @@
 <div class="component-body">
-  <div class="project-grid" >
+  <div class="project-grid">
     <mat-card class="project-card" *ngFor="let project of projects">
       <mat-card-header>
         <mat-card-title>{{project.name}}</mat-card-title>
@@ -11,8 +11,8 @@
         </p>
       </mat-card-content>
       <mat-card-actions class="actions">
-        <button mat-raised-button color="primary"><a target="_blank" [href]="project.html_url">View on Github</a></button>
-        <button *ngIf="project.homepage != null && project.homepage != ''" mat-raised-button color="accent"><a target="_blank" [href]="project.homepage">Live Demo</a></button>    </mat-card-actions>
+        <button mat-raised-button color="primary"><a target="_blank" [href]="project.html_url">View Source</a></button>
+        <button *ngIf="project.homepage != null && project.homepage != ''" mat-raised-button color="accent"><a target="_blank" [href]="project.homepage"><mat-icon aria-hidden="false" color="primary" aria-label="Contact icon">flash_on</mat-icon> Live Demo</a></button>    </mat-card-actions>
     </mat-card>
   </div>
 </div>

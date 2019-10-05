@@ -7,13 +7,17 @@
 }
 
 body {
-  background: linear-gradient(160deg, var(--linear-background) 60%, rgba(255,255,255,1) 60%) no-repeat center center fixed !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: linear-gradient(160deg, var(--linear-background) 65%, rgba(255,255,255,1) 65%) no-repeat center center fixed !important;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Code', monospace;
 }
 
 a {
@@ -22,10 +26,7 @@ a {
 }
 
 html {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 
 

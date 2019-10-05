@@ -18,9 +18,7 @@ export class ProjectsComponent implements OnInit {
 
   private fetchGithubProjects() {
     return this.http.get("https://api.github.com/users/zackshorts/repos").subscribe(res => {
-      console.log(res);
       this.projects = res;
-      console.log(this.projects);
     });
   }
 

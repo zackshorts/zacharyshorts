@@ -16,17 +16,23 @@
   padding-bottom: 50px;
 }
 
-.actions {
+mat-icon {
+  vertical-align: middle;
 }
 
-@media (max-width: 650px) {
+.actions {
+  float: right;
+}
+
+@media (max-width: 712px) {
   .project-grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1092px) {
   .project-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
