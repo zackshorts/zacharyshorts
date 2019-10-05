@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {MatSnackBar} from '@angular/material';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -8,7 +9,20 @@ import {MatSnackBar} from '@angular/material';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+    console.log(event);
+
+    if (event.code === 'ArrowRight') {
+      this.router.navigateByUrl('/about');
+    }
+
+    if (event.code === 'ArrowLeft') {
+      this.router.navigateByUrl('/projects');
+    }
+  }
 
   ngOnInit() {
   }
