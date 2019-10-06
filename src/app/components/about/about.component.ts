@@ -11,7 +11,6 @@ export class AboutComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    console.log(event);
 
     if (event.code === 'ArrowRight') {
       this.router.navigateByUrl('/projects');

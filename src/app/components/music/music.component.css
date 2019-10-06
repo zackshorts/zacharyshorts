@@ -25,6 +25,11 @@ iframe {
   font-weight: 400;
 }
 
-/*.component-body {*/
-/*  height: calc(100vh - 110px) !important;*/
-/*}*/
+@media (max-width: 550px) {
+  /deep/ .mat-tab-body-content {
+    padding: 0 25px 100px 25px;
+  }
+  iframe{
+    margin-top: 15px;
+  }
+}

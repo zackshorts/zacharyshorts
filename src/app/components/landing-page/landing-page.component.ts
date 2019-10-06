@@ -13,14 +13,13 @@ export class LandingPageComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    console.log(event);
 
     if (event.code === 'ArrowRight') {
       this.router.navigateByUrl('/about');
     }
 
     if (event.code === 'ArrowLeft') {
-      this.router.navigateByUrl('/projects');
+      this.router.navigateByUrl('/music');
     }
   }
 

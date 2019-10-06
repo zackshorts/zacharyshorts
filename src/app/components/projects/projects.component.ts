@@ -15,10 +15,9 @@ export class ProjectsComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    console.log(event);
 
     if (event.code === 'ArrowRight') {
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/music');
     }
 
     if (event.code === 'ArrowLeft') {

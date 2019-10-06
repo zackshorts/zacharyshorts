@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-music',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+
+    if (event.code === 'ArrowRight') {
+      this.router.navigateByUrl('/home');
+    }
+
+    if (event.code === 'ArrowLeft') {
+      this.router.navigateByUrl('/projects');
+    }
+  }
 
   ngOnInit() {
   }
