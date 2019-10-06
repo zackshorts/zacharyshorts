@@ -27,6 +27,7 @@ import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {OverlayContainer, OverlayModule} from '@angular/cdk/overlay';
 import { MusicComponent } from './components/music/music.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -62,7 +63,7 @@ import { MusicComponent } from './components/music/music.component';
     OverlayModule,
     MatDividerModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
