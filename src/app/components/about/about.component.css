@@ -1,0 +1,24 @@
+.instagram-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 25px;
+  grid-gap: 25px;
+  justify-items: center;
+  margin-top: 100px;
+}
+
+img {
+  max-height: 540px;
+}
+
+@media (max-width: 835px) {
+  .instagram-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1075px) {
+  .instagram-links {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

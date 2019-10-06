@@ -1,0 +1,30 @@
+iframe {
+  margin-top: 50px;
+  background-color: white !important;
+  z-index: 1;
+  border-radius: 5px !important;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important;
+}
+
+/deep/ .mat-tab-body-content {
+  padding: 0 100px 50px 50px;
+  text-align: center;
+  margin: auto;
+}
+
+/deep/ .mat-tab-header {
+  background-color: white;
+  color: black;
+}
+
+/deep/ .mat-tab-body-content {
+  height: fit-content !important;
+}
+
+/deep/ .mat-tab-label-content {
+  font-weight: 400;
+}
+
+/*.component-body {*/
+/*  height: calc(100vh - 110px) !important;*/
+/*}*/

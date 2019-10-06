@@ -1,4 +1,39 @@
-/*.component-body {*/
-/*  background: rgb(255,255,255);*/
-/*  background: linear-gradient(160deg, rgba(255,255,255,1) 60%, rgba(63,81,181,1) 60%);*/
-/*}*/
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 50vw;
+  margin: 35px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important;
+}
+
+#title {
+  text-align: right;
+  padding: 15px;
+  margin: 50px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+@media (max-width: 667px) {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #title {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+}

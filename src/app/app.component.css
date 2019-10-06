@@ -9,6 +9,11 @@ app-header {
   z-index: 2;
 }
 
+/deep/ .mat-menu-content {
+  padding: 0 !important;
+  height: fit-content !important;
+}
+
 .contact-fab {
   position: fixed;
   bottom: 25px;
@@ -16,6 +21,18 @@ app-header {
   box-shadow: 0 5px 7px -1px rgba(0,0,0,.2),
   0 6px 10px 0 rgba(0,0,0,.14),
   0 1px 18px 0 rgba(0,0,0,.12);
+  z-index: 99;
+}
+
+
+.color-fab {
+  position:fixed;
+  bottom: 106px;
+  right: 25px;
+  box-shadow: 0 5px 7px -1px rgba(0,0,0,.2),
+  0 6px 10px 0 rgba(0,0,0,.14),
+  0 1px 18px 0 rgba(0,0,0,.12);
+  z-index: 99;
 }
 
 textarea {
@@ -33,4 +50,76 @@ snack-bar-container {
 
 .center {
   justify-content: center;
+}
+
+.grey-color {
+  background: rgb(255,255,255);
+  background: linear-gradient(225deg, rgba(189,189,189,1) 50%, rgba(0,0,0,1) 50%);
+}
+.grey-color:hover {
+  background-color: rgba(0,0,0,1) !important;
+}
+
+.green-color {
+  background: rgb(105,240,174);
+  background: linear-gradient(225deg, rgba(105,240,174,1) 50%, rgba(55,71,79,1) 50%);
+}
+.green-color:hover {
+  background-color: rgba(55,71,79,1) !important;
+}
+
+.red-color {
+  background: rgb(144,202,249);
+  background: linear-gradient(225deg, rgba(144,202,249,1) 50%, rgba(239,83,80,1) 50%);
+}
+.red-color:hover {
+  background-color: rgba(239,83,80,1) !important;
+}
+
+.indigo-color {
+  background: rgb(255,215,64);
+  background: linear-gradient(225deg, rgba(255,215,64,1) 50%, rgba(63,81,181,1) 50%);
+}
+.indigo-color:hover {
+  background-color: rgba(63,81,181,1) !important;
+}
+
+.purple-color {
+  background: rgb(49,27,146);
+  background: linear-gradient(225deg, rgba(149,117,205,1) 50%, rgba(49,27,146,1) 50%);
+}
+.purple-color:hover {
+  background-color: rgba(49,27,146,1) !important;
+}
+
+.orange-color {
+  background: rgb(121,85,72);
+  background: linear-gradient(225deg, rgba(46,125,50,1) 50%, rgba(255,61,0,1) 50%);
+}
+.orange-color:hover {
+  background-color: rgba(255,61,0,1) !important;
+}
+
+.brown-color {
+  background: rgb(141,110,99);
+  background: linear-gradient(225deg, rgba(212,225,87,1) 50%, rgba(78,52,46,1) 50%);
+}
+.brown-color:hover {
+  background-color: rgba(78,52,46,1) !important;
+}
+
+.yellow-color {
+  background: rgb(0,105,92);
+  background: linear-gradient(225deg, rgba(0,105,92,1) 50%, rgba(255,238,88,1) 50%);
+}
+.yellow-color:hover {
+  background-color: rgba(255,238,88,1) !important;
+}
+
+.pink-color {
+  background: rgb(0,151,167);
+  background: linear-gradient(225deg, rgba(0,151,167,1) 50%, rgba(236,64,122,1) 50%);
+}
+.pink-color:hover {
+  background-color: rgba(236,64,122,1) !important;
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, HostListener, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -6,8 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  constructor(private router: Router) { }
 
-  constructor() { }
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+    console.log(event);
+
+    if (event.code === 'ArrowRight') {
+      this.router.navigateByUrl('/projects');
+    }
+
+    if (event.code === 'ArrowLeft') {
+      this.router.navigateByUrl('/home');
+    }
+  }
 
   ngOnInit() {
   }

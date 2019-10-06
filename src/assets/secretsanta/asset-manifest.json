@@ -1,0 +1,14 @@
+{
+  "main.css": "./static/css/main.8667982f.chunk.css",
+  "main.js": "./static/js/main.628aea5d.chunk.js",
+  "main.js.map": "./static/js/main.628aea5d.chunk.js.map",
+  "static/js/1.7fe6620d.chunk.js": "./static/js/1.7fe6620d.chunk.js",
+  "static/js/1.7fe6620d.chunk.js.map": "./static/js/1.7fe6620d.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
+  "runtime~main.js.map": "./static/js/runtime~main.4a686d48.js.map",
+  "static/media/SecretSanta.css": "./static/media/elves.a64260e3.jpg",
+  "static/css/main.8667982f.chunk.css.map": "./static/css/main.8667982f.chunk.css.map",
+  "index.html": "./index.html",
+  "precache-manifest.e898038dca1edd8be9062496d0f36c98.js": "./precache-manifest.e898038dca1edd8be9062496d0f36c98.js",
+  "service-worker.js": "./service-worker.js"
+}

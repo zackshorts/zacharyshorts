@@ -1,17 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-/*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
-/*@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";*/
-/*@import "~@angular/material/prebuilt-themes/purple-green.css";*/
-/*@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";*/
+
 @import "./custom-theme";
+
+:root {
+  --linear-background: #DDD;
+}
+
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: linear-gradient(160deg, var(--linear-background) 65%, rgba(255,255,255,1) 65%) no-repeat center center fixed !important;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Fira Sans', sans-serif;
-}
-
-body {
-  background-color: #fff;
+  font-weight: 300;
 }
 
 a {
@@ -19,14 +26,20 @@ a {
   color: white;
 }
 
+html {
+
+}
+
+
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{background-color: pink !important;}
+
+
 .component-body {
   margin-top: 60px;
   height: calc(100vh - 60px);
   width: 100vw;
-  background: rgb(255,255,255);
-  background: linear-gradient(170deg, rgba(255,255,255,1) 60%, $greenprimary 60%);
 }
 
 mat-icon {
-  color: rgba(67, 66, 73, 0.87);
+
 }
