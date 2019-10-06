@@ -26,6 +26,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {OverlayContainer, OverlayModule} from '@angular/cdk/overlay';
+import { MusicComponent } from './components/music/music.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import {OverlayContainer, OverlayModule} from '@angular/cdk/overlay';
     AboutComponent,
     ContactComponent,
     HeaderComponent,
+    MusicComponent,
   ],
   imports: [
     BrowserModule,
