@@ -1,4 +1,5 @@
-# Zachary Shorts
+# Zachary Shorts - Jedi master
+# Caleb Smith - Padawan in training
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
