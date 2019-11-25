@@ -14,7 +14,7 @@ export class MusicComponent implements OnInit {
   keyEvent(event: KeyboardEvent) {
 
     if (event.code === 'ArrowRight') {
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/');
     }
 
     if (event.code === 'ArrowLeft') {

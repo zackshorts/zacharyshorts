@@ -1,8 +1,8 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <a id="title" routerLink="/home" routerLinkActive="active"><img src="../../assets/graffiti-logo.png" alt="image"></a>
+    <a id="title" routerLink="/" routerLinkActive="active"><img src="../../assets/graffiti-logo.png" alt="image"></a>
     <div class="links">
-      <a mat-raised-button routerLink="/home" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">home</mat-icon> Home</a>
+      <a mat-raised-button routerLink="/" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">home</mat-icon> Home</a>
       <a mat-raised-button routerLink="/about" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">info</mat-icon> About</a>
       <a mat-raised-button routerLink="/projects" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">code</mat-icon> Projects</a>
       <a mat-raised-button routerLink="/music" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">music_note</mat-icon> Music</a>
@@ -10,7 +10,7 @@
     <div class="hamburger">
       <button mat-raised-button [matMenuTriggerFor]="menu"><mat-icon aria-hidden="false" aria-label="info icon">menu</mat-icon></button>
       <mat-menu #menu="matMenu">
-        <a mat-menu-item routerLink="/home" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">home</mat-icon> Home</a>
+        <a mat-menu-item routerLink="/" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">home</mat-icon> Home</a>
         <a mat-menu-item routerLink="/about" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">info</mat-icon> About</a>
         <a mat-menu-item routerLink="/projects" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">code</mat-icon> Projects</a>
         <a mat-menu-item routerLink="/music" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="info icon">music_note</mat-icon> Music</a>

@@ -7,8 +7,8 @@ import {ContactComponent} from './components/contact/contact.component';
 import {MusicComponent} from './components/music/music.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/home' },
-  { path: 'home', component: LandingPageComponent, data: {animation: 'Home'}, },
+  // { path: '', redirectTo: '/home' },
+  { path: '', component: LandingPageComponent, data: {animation: 'Home'}, },
   { path: 'projects', component:  ProjectsComponent, data: {animation: 'Projects'},},
   { path: 'about', component: AboutComponent, data: {animation: 'About'}, },
   { path: 'contact', component: ContactComponent},
