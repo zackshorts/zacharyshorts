@@ -21,7 +21,9 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/secret-santa/index.html",
+              "src/assets/pong/pong.html"
             ],
             "styles": [
               "src/custom-theme.scss",
@@ -82,7 +84,9 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/secret-santa/index.html",
+              "src/assets/pong/index.html"
             ],
             "styles": [
               "src/styles.scss"

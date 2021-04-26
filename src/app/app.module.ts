@@ -5,8 +5,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { SecretSantaComponent } from './components/secret-santa/secret-santa.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { MainComponent } from './components/main/main.component';
 import {MatCardModule} from '@angular/material/card';
 import {
   MatButtonModule,
@@ -34,12 +34,12 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
   declarations: [
     AppComponent,
     LandingPageComponent,
-    SecretSantaComponent,
     ProjectsComponent,
     AboutComponent,
     ContactComponent,
     HeaderComponent,
     MusicComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

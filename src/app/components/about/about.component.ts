@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
     }
 
     if (event.code === 'ArrowLeft') {
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/');
     }
   }
 
