@@ -5,6 +5,7 @@ import {ProjectsComponent} from './components/projects/projects.component';
 import {AboutComponent} from './components/about/about.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {MusicComponent} from './components/music/music.component';
+import { MainComponent } from './components/main/main.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home' },
@@ -12,7 +13,9 @@ const routes: Routes = [
   { path: 'projects', component:  ProjectsComponent, data: {animation: 'Projects'},},
   { path: 'about', component: AboutComponent, data: {animation: 'About'}, },
   { path: 'contact', component: ContactComponent},
-  { path: 'music', component: MusicComponent, data: {animation: 'Music'},}
+  { path: 'music', component: MusicComponent, data: {animation: 'Music'},},
+  { path: 'secret-santa', component: MainComponent,},
+
 ];
 
 @NgModule({

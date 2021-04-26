@@ -1,0 +1,51 @@
+<div class="main-body">
+  <h1>secret santa</h1>
+  <mat-card class="main-grid">
+    <form [formGroup]="nameForm" class="contact-form">
+      <span>
+        <mat-form-field>
+          <input formControlName="name" matInput placeholder="Name" [(ngModel)]="inputName" required>
+          <mat-error *ngIf="nameForm.get('name').hasError('required')">
+            Name is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="email" matInput placeholder="Email" [(ngModel)]="inputEmail" required>
+          <mat-error *ngIf="nameForm.get('email').hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </span>
+      <span>
+        <mat-form-field>
+          <input formControlName="spouseName" matInput placeholder="Spouse Name" [(ngModel)]="spouseName">
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="spouseEmail" matInput placeholder="Spouse Email" [(ngModel)]="spouseEmail">
+          <mat-error *ngIf="nameForm.get('spouseEmail').hasError('email')">
+            Email is <strong>incorrect</strong>
+          </mat-error>
+        </mat-form-field>
+      </span>
+      <div mat-dialog-actions class="action-buttons">
+        <button mat-raised-button color="accent" (click)="submitAllNames()" [disabled]="this.participants.length < 4"><mat-icon>check</mat-icon> Submit all names</button>
+        <button mat-raised-button color="primary" (click)="addParticipant(this.inputName, this.inputEmail, this.spouseName, this.spouseEmail)" [disabled]="!nameForm.valid"><mat-icon>add</mat-icon> Add Name</button>
+      </div>    
+      <img class="grinch" src="../../../assets/grinch.png"/>
+    </form>
+    <div class="participant-list">
+      <div>
+        <p>Participants:</p>
+        <ul>
+          <li class="participants" *ngFor="let p of participants">{{p.name | uppercase}}</li>
+        </ul>
+        </div>
+    </div>
+  </mat-card>
+  <div class="hide" id='content'>
+      <h2>Secret Santa {{this.year}}</h2>
+      <div *ngFor="let pair of pairedParticipants">
+        <p>{{pair.giver.name}} gives to {{pair.receiver.name}}</p>
+      </div>
+  </div>
+</div>
