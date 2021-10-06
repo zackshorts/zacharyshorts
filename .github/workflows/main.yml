@@ -21,4 +21,4 @@ jobs:
       with:
         args: deploy --only hosting
       env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ZACHARYSHORTS_1 }}
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
