@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "zacharyshorts-1"
+    "default": "zacharyshorts-1",
+    "main": "zacharyshorts-1"
   }
 }
