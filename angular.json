@@ -22,7 +22,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/assets/secret-santa/index.html",
               "src/assets/pong/pong.html"
             ],
             "styles": [
@@ -85,7 +84,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/assets/secret-santa/index.html",
               "src/assets/pong/index.html"
             ],
             "styles": [
