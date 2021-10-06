@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { MainComponent } from './components/main/main.component';
 import {MatCardModule} from '@angular/material/card';
 import {
   MatButtonModule,
@@ -39,7 +38,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     ContactComponent,
     HeaderComponent,
     MusicComponent,
-    MainComponent
   ],
   imports: [
     BrowserModule,
